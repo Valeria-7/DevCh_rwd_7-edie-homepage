@@ -390,3 +390,67 @@ body {
   line-height: 27px;
   color: var(--gray3);
 }
+
+.footer {
+  padding: 46px 0 24px 0;
+  background-color: #100e1d;
+}
+
+.footer-menu {
+  list-style-type: none;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 200%;
+  color: #ffffff;
+}
+
+.footer-contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 118px;
+}
+
+.footer .logo {
+  margin-bottom: 8px;
+  color: var(--gray6);
+}
+
+.footer .email-label {
+  color: var(--gray6);
+}
+
+.social-link {
+  text-decoration: none;
+  margin-right: 11px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-user-info {
+  text-align: center;
+}
+
+.user-info {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray6);
+}
+
+.footer-link {
+  color: var(--gray6);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--gray3);
+}
+
+.user-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
