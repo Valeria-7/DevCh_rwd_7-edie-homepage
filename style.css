@@ -258,7 +258,8 @@ body {
 }
 
 .project-image {
-  width: 545px;
+  max-width: 545px;
+  width: 100%;
   border-radius: 12px;
   transition: 0.3s;
 }
@@ -453,4 +454,195 @@ body {
 .user-link {
   text-decoration: underline;
   font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+  .container,
+  .section-container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 1220px) {
+  .project-image {
+    max-width: 450px;
+  }
+
+  .works-cards {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-image {
+    max-width: 350px;
+  }
+
+  .about {
+    margin-bottom: 150px;
+  }
+
+  .services-cards {
+    margin-bottom: 150px;
+  }
+
+  .team {
+    margin-top: 150px;
+  }
+
+  .reviews {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+
+  .team-photo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+  }
+
+  .team-photo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .work-card:nth-child(2n + 1) {
+    margin-top: 0;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .team-text {
+    margin-bottom: 36px;
+  }
+
+  .footer-contact-info {
+    flex-direction: column;
+  }
+
+  .footer-menu {
+    margin-bottom: 64px;
+  }
+
+  .footer-social-links {
+    margin-bottom: 65px;
+  }
+
+  .footer .section-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-container {
+    max-width: 90%;
+  }
+  .main {
+    margin-top: 48px;
+  }
+
+  .logo {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .main-subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .main-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .about-photo {
+    margin-bottom: 22px;
+  }
+
+  .about-text {
+    margin-bottom: 31px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .email-label {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .email-input {
+    height: 47px;
+  }
+
+  .input-area {
+    width: 290px;
+  }
+
+  .email-input::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .input-button {
+    padding: 9px 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about {
+    margin-bottom: 102px;
+  }
+
+  .section-title {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .project-subtitle {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .project-title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .more-button {
+    margin-left: 0;
+  }
+
+  .team {
+    margin-top: 100px;
+  }
+
+  .reviews {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .review-text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
