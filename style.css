@@ -245,6 +245,7 @@ body {
 .works-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 20px;
 }
 
@@ -467,10 +468,6 @@ body {
   .project-image {
     max-width: 450px;
   }
-
-  .works-cards {
-    justify-content: space-around;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -507,6 +504,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .work-card:nth-child(2n + 1) {
+    margin-top: 0;
+  }
+
   .services-cards {
     flex-direction: column;
   }
@@ -517,10 +518,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  .work-card:nth-child(2n + 1) {
-    margin-top: 0;
-  }
-
   .team {
     flex-direction: column;
   }
