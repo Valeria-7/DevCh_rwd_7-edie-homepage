@@ -12,9 +12,9 @@
   --gray6: #f2f2f2;
 }
 
-/*html {
-  transition: 0.3s;
-}*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -69,6 +69,16 @@ body {
   line-height: 36px;
   text-decoration: none;
   color: var(--gray1);
+}
+
+.burger-menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  width: 30px;
 }
 
 .main {
@@ -494,8 +504,31 @@ body {
 }
 
 @media (max-width: 900px) {
+  .main-navigation {
+    position: relative;
+  }
+
   .menu {
-    display: none;
+    background-color: var(--gray6);
+    position: absolute;
+    top: -300px;
+    right: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px 0;
+    transition: 0.5s;
+  }
+
+  .menu-item {
+    margin: 0;
+    padding: 4px 0;
+  }
+
+  .burger-menu {
+    display: block;
   }
 
   .team-photo {
@@ -642,4 +675,12 @@ body {
     font-size: 24px;
     line-height: 36px;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.show-menu {
+  top: 0;
 }
